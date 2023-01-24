@@ -61,3 +61,26 @@
     color: var(--cor__0);
     transition: 0.2s;
 }
+
+.titulo__bg{
+    background-color: var(--cor__11);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.titulo p{
+    margin-bottom: 4px;
+}
+
+@media (max-width: 800px) {
+    .titulo__bg{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .titulo p {
+        font-size: 1rem;
+        text-transform: lowercase;
+        font-family: 400;
+    }
+}
