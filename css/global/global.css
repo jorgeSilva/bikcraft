@@ -4,14 +4,14 @@ body{
     color: var(--cor__11);
 }
 
-h1, h2, h3, h4 ul, blockquote, p{
+h1, h2, h3, h4 ul, blockquote, p, dd{
     margin: 0;
 }
 
 ul{
     list-style: none;
-
     padding: 0;
+    margin: 0;
 }
 
 a{
