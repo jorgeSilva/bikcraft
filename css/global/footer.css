@@ -61,6 +61,11 @@
         gap: 60px;
     }
 
+    .footer__contato li:nth-child(even):after{
+        content: "";
+        width: 100%;
+    }
+
     .footer__copy{
         margin-top: 0px;
     }
