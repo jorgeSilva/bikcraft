@@ -50,6 +50,11 @@
         margin-top: 60px;
     }
 
+    .depoimento p::after{
+        content: "”";
+        overflow: hidden;
+    }
+
     .depoimento img{
         max-height: 200px;
     }
