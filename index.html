@@ -7,6 +7,7 @@
     <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade, feita sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.">
     <title>Bikcraft - Bicicletas Elétricas</title>
 
+    <link rel="preload" href="./css/style.css" as="style">
     <link rel="stylesheet" href="./css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,18 +15,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
     <header class="header__bg">
         <div class="header container">
             <a href="./">
-                <img src="./img/bikcraft.svg" alt="">
+                <img src="./img/bikcraft.svg" width="136" height="32" alt="">
             </a>
             <nav>
                 <ul class="header__menu font__1__m cor__0">
-                    <li><a href="./bicicletas.html">Bicicletas</a></li>
+                    <li><a href="./bicicletas.html" >Bicicletas</a></li>
                     <li><a href="./seguro.html">Seguros</a></li>
                     <li><a href="./contato.html">Contato</a></li>
                 </ul>
@@ -41,9 +41,10 @@
                 <p class="font__2__l cor__5">Quando iniciamos a Bikcraft queriamos apenas um produto que adorariamos utilizar. Eramos apaixonados por pedalar e também fazer.</p>
                 <a class="botao" href="./bicicletas.html">escolha a sua </a>
             </div>
-            <div class="introducao__img">
+            <picture class="introducao__img">
+                <source media="(max-width:800px)" srcset="./img/bicicletas/nimbus.jpg">
                 <img src="./img/fotos/introducao.jpg" alt="Bicicleta elétrica preta.">
-            </div>
+            </picture>
         </div>
     </main>
 
@@ -105,7 +106,7 @@
             </div>
 
             <div class="tecnologia__img">
-                <img src="./img/fotos/tecnologia.jpg" alt="">
+                <img src="./img/fotos/tecnologia.jpg" width="1280" height="1600" alt="">
             </div>
         </div>
     </article>
