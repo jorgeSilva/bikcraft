@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
+<script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body id="seguros">
@@ -43,34 +44,39 @@
         </div>
 
         <div class="seguros container">
-            <div class="seguros__itens">
-                <h3 class="font__1__xl cor__5">PRATA</h3>
-                <span class="font__1__xl cor__0">R$ 199 <span class="font__1__xs cor__6">mensal</span></span>
+            <div class="seguros__itens fadeInLeft" data-anime="200">
+                <h3 class="font__1__xl cor__5 fadeInLeft" data-anime="300">
+                    PRATA
+                </h3>
+                <span class="font__1__xl cor__0 fadeInLeft" data-anime="350">
+                    R$ 199 
+                    <span class="font__1__xs cor__6">mensal</span>
+                </span>
 
                 <ul class="font__2__m cor__0">
-                    <li>Duas trocas por ano</li>
-                    <li>Assistencia técnica</li>
-                    <li>Suporte 08h às 18h</li>
-                    <li>Cobertura estadual</li>
+                    <li class="fadeInLeft" data-anime="400">Duas trocas por ano</li>
+                    <li class="fadeInLeft" data-anime="450">Assistencia técnica</li>
+                    <li class="fadeInLeft" data-anime="500">Suporte 08h às 18h</li>
+                    <li class="fadeInLeft" data-anime="550">Cobertura estadual</li>
                 </ul>
 
-                <a class="botao secundario" href="./orcamento.html?tipo=seguro&produto=prata">Inscreva-se</a>
+                <a class="botao secundario fadeInLeft" data-anime="600" href="./orcamento.html?tipo=seguro&produto=prata">Inscreva-se</a>
             </div>
 
-            <div class="seguros__itens">
-                <h3 class="font__1__xl cor__p1">OURO</h3>
-                <span class="font__1__xl cor__0">R$ 299 <span class="font__1__xs cor__6">mensal</span></span>
+            <div class="seguros__itens fadeInRight" data-anime="400">
+                <h3 class="font__1__xl cor__p1 fadeInRight" data-anime="500">OURO</h3>
+                <span class="font__1__xl cor__0 fadeInRight" data-anime="550">R$ 299 <span class="font__1__xs cor__6">mensal</span></span>
 
                 <ul class="font__2__m cor__0">
-                    <li>Cinco trocas por ano</li>
-                    <li>Assistencia especial</li>
-                    <li>Suporte 24h</li>
-                    <li>Cobertura nacional</li>
-                    <li>Desconto em parceiros</li>
-                    <li>Acesso ao Clube Bikcraft</li>
+                    <li class="fadeInRight" data-anime="600">Cinco trocas por ano</li>
+                    <li class="fadeInRight" data-anime="650">Assistencia especial</li>
+                    <li class="fadeInRight" data-anime="700">Suporte 24h</li>
+                    <li class="fadeInRight" data-anime="750">Cobertura nacional</li>
+                    <li class="fadeInRight" data-anime="800">Desconto em parceiros</li>
+                    <li class="fadeInRight" data-anime="850">Acesso ao Clube Bikcraft</li>
                 </ul>
 
-                <a class="botao" href="./orcamento.html?tipo=seguro&produto=ouro">Inscreva-se</a>
+                <a class="botao fadeInRight" data-anime="900" href="./orcamento.html?tipo=seguro&produto=ouro">Inscreva-se</a>
             </div>
         </div>
     </main>
@@ -251,6 +257,8 @@
             <p class="footer__copy font__2__m cor__6">Bikcraft © Alguns direitos reservados.</p>
         </div>
     </footer>
+
+<script src="./js/plugins/simple-anime.js"></script>
 <script src="./js/script.js"></script>
 </body>
 </html>
