@@ -19,3 +19,20 @@ parametros.forEach(function(item){
     elemento.checked = true
   }
 })
+
+//perguntas frequentes
+const botao = document.querySelectorAll('.perguntas button')
+
+function ativar_pergunta(e){
+  const pergunta = e.currentTarget
+  const controls = pergunta.getAttribute('aria-controls')
+  const resposta = document.getElementById(controls)
+
+  resposta.classList.toggle("ativo")
+  const ativa = resposta.classList.contains("ativo")
+  pergunta.setAttribute('aria-expanded', ativa)
+}
+
+botao.forEach(function(item){
+  item.addEventListener('click', ativar_pergunta)
+})
