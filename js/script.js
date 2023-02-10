@@ -36,3 +36,19 @@ function ativar_pergunta(e){
 botao.forEach(function(item){
   item.addEventListener('click', ativar_pergunta)
 })
+
+//galeria de bicicletas
+const galeria = document.querySelectorAll(".bicicleta__img img")
+const galeria_container = document.querySelector(".bicicleta__img")
+
+function trocar_img(e){
+  const img = e.currentTarget
+  const media = matchMedia('(min-width:940px)').matches
+  if(media){
+    galeria_container.prepend(img)
+  }
+}
+
+galeria.forEach((item)=>{
+  item.addEventListener('click', trocar_img)
+})
